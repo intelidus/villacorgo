@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Materiais e Acabamentos — Villa Corgo</title>
+    <meta name="description" content="Lista detalhada de materiais e acabamentos do Villa Corgo, com base no documento técnico." />
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-component="header">
+      <div class="container">
+        <a href="index.html#top" class="brand" aria-label="Villa Corgo">
+          <img class="brand-mark" src="assets/icons/logo.svg" alt="Villa Corgo" width="140" height="28" />
+          <span class="sr-only">Villa Corgo</span>
+        </a>
+        <nav class="site-nav" aria-label="Navegação principal">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">
+            <span class="sr-only">Abrir menu</span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul id="primary-menu" class="nav-list">
+            <li><a href="index.html#empreendimento">Empreendimento</a></li>
+            <li><a href="apartamentos.html">Apartamentos</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="materiais.html" aria-current="page">Materiais</a></li>
+            <li><a href="index.html#localizacao">Localização</a></li>
+            <li class="nav-cta"><a class="button button-primary" href="index.html#contacto">Agendar visita</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="section">
+        <div class="container">
+          <h1>Materiais e Acabamentos</h1>
+          <p class="section-intro">Conteúdo gerado automaticamente a partir do documento técnico "Acabamentos (vendas)". Para referência completa, consulte o PDF.</p>
+          <div id="acabamentos-list"></div>
+          <div class="cta-group" style="margin-top:16px;">
+            <a class="button button-secondary" href="assets/img/galeria/ACABAMENTOS (vendas).pdf" target="_blank" rel="noopener">Abrir PDF completo</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-brand">
+            <img src="assets/icons/logo.svg" alt="Villa Corgo" width="120" height="24" />
+          </div>
+          <div class="footer-cta">
+            <a href="index.html#contacto" class="button button-secondary">Contactar</a>
+          </div>
+        </div>
+        <div class="footer-row">
+          <div class="muted small">Rua Jaime Campos, Vila Real · info@exemplo.pt · +351 000 000 000</div>
+          <div class="small muted">© Villa Corgo. Informação meramente ilustrativa.</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js" defer></script>
+    <script src="assets/js/pdf-extract.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
+  </body>
+  </html>
+

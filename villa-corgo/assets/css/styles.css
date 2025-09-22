@@ -114,10 +114,15 @@ h3 { font-size: 18px; }
 .form-feedback { margin-top: 8px; color: var(--primary); }
 
 .site-footer { border-top: 1px solid var(--outline); padding: 28px 0; }
-.footer-row { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.footer-row { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
 .footer-brand { display: flex; align-items: center; gap: 10px; }
 .small { font-size: 12px; }
 .muted { color: var(--muted); }
+
+/* Tables */
+.table { width: 100%; border-collapse: collapse; border: 1px solid var(--outline); border-radius: 12px; overflow: hidden; }
+.table th, .table td { padding: 10px 12px; border-bottom: 1px solid var(--outline); text-align: left; }
+.table thead th { background: #f8fafc; font-weight: 600; }
 
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 18px; border-radius: 999px; border: 1px solid var(--outline); background: #ffffff; color: var(--text); cursor: pointer; transition: transform 0.04s ease, background 0.2s ease, border-color 0.2s ease; }
 .button:hover { transform: translateY(-1px); }

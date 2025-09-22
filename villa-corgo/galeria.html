@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Galeria — Villa Corgo</title>
+    <meta name="description" content="Galeria completa de imagens interiores e exteriores do Villa Corgo." />
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-component="header">
+      <div class="container">
+        <a href="index.html#top" class="brand" aria-label="Villa Corgo">
+          <img class="brand-mark" src="assets/icons/logo.svg" alt="Villa Corgo" width="140" height="28" />
+          <span class="sr-only">Villa Corgo</span>
+        </a>
+        <nav class="site-nav" aria-label="Navegação principal">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">
+            <span class="sr-only">Abrir menu</span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul id="primary-menu" class="nav-list">
+            <li><a href="index.html#empreendimento">Empreendimento</a></li>
+            <li><a href="apartamentos.html">Apartamentos</a></li>
+            <li><a href="galeria.html" aria-current="page">Galeria</a></li>
+            <li><a href="materiais.html">Materiais</a></li>
+            <li><a href="index.html#localizacao">Localização</a></li>
+            <li class="nav-cta"><a class="button button-primary" href="index.html#contacto">Agendar visita</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="section">
+        <div class="container">
+          <h1>Galeria</h1>
+          <p class="section-intro">Explore imagens interiores e exteriores do Villa Corgo.</p>
+          <h3>Exterior</h3>
+          <div class="gallery gallery-grid">
+            <figure>
+              <a href="assets/img/galeria/exterior/1-ext-0000.jpg" data-caption="Exterior">
+                <img src="assets/img/galeria/exterior/1-ext-0000.jpg" alt="Exterior" />
+              </a>
+            </figure>
+          </div>
+          <h3 style="margin-top:28px;">Interior</h3>
+          <div class="gallery gallery-grid">
+            <figure><a href="assets/img/galeria/interior/2-T1-0000.jpg" data-caption="Interior"><img src="assets/img/galeria/interior/2-T1-0000.jpg" alt="Interior" /></a></figure>
+            <figure><a href="assets/img/galeria/interior/2-T1-0001.jpg" data-caption="Interior"><img src="assets/img/galeria/interior/2-T1-0001.jpg" alt="Interior" /></a></figure>
+            <figure><a href="assets/img/galeria/interior/2-T1-0002.jpg" data-caption="Interior"><img src="assets/img/galeria/interior/2-T1-0002.jpg" alt="Interior" /></a></figure>
+            <figure><a href="assets/img/galeria/interior/2-T1-0003.jpg" data-caption="Interior"><img src="assets/img/galeria/interior/2-T1-0003.jpg" alt="Interior" /></a></figure>
+            <figure><a href="assets/img/galeria/interior/2-T1-0004.jpg" data-caption="Interior"><img src="assets/img/galeria/interior/2-T1-0004.jpg" alt="Interior" /></a></figure>
+            <figure><a href="assets/img/galeria/interior/2-T1-0005.jpg" data-caption="Interior"><img src="assets/img/galeria/interior/2-T1-0005.jpg" alt="Interior" /></a></figure>
+            <figure><a href="assets/img/galeria/interior/2-T1-0006.jpg" data-caption="Interior"><img src="assets/img/galeria/interior/2-T1-0006.jpg" alt="Interior" /></a></figure>
+            <figure><a href="assets/img/galeria/interior/2-T1-0007.jpg" data-caption="Interior"><img src="assets/img/galeria/interior/2-T1-0007.jpg" alt="Interior" /></a></figure>
+            <figure><a href="assets/img/galeria/interior/2-T1-0008.jpg" data-caption="Interior"><img src="assets/img/galeria/interior/2-T1-0008.jpg" alt="Interior" /></a></figure>
+            <figure><a href="assets/img/galeria/interior/2-T1-0009.jpg" data-caption="Interior"><img src="assets/img/galeria/interior/2-T1-0009.jpg" alt="Interior" /></a></figure>
+            <figure><a href="assets/img/galeria/interior/2-T1-0010.jpg" data-caption="Interior"><img src="assets/img/galeria/interior/2-T1-0010.jpg" alt="Interior" /></a></figure>
+            <figure><a href="assets/img/galeria/interior/2-T1-0011.jpg" data-caption="Interior"><img src="assets/img/galeria/interior/2-T1-0011.jpg" alt="Interior" /></a></figure>
+            <figure><a href="assets/img/galeria/interior/2-T1-0012.jpg" data-caption="Interior"><img src="assets/img/galeria/interior/2-T1-0012.jpg" alt="Interior" /></a></figure>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-brand">
+            <img src="assets/icons/logo.svg" alt="Villa Corgo" width="120" height="24" />
+          </div>
+          <div class="footer-cta">
+            <a href="index.html#contacto" class="button button-secondary">Contactar</a>
+          </div>
+        </div>
+        <div class="footer-row">
+          <div class="muted small">Rua Jaime Campos, Vila Real · info@exemplo.pt · +351 000 000 000</div>
+          <div class="small muted">© Villa Corgo. Informação meramente ilustrativa.</div>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="lightbox" id="lightbox" hidden>
+      <div class="lightbox-content">
+        <img src="" alt="" id="lightbox-img" />
+        <div class="caption" id="lightbox-caption"></div>
+        <button class="close" id="lightbox-close" aria-label="Fechar">✕</button>
+      </div>
+    </dialog>
+
+    <script src="assets/js/script.js" defer></script>
+  </body>
+  </html>
+
