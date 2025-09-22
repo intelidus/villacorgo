@@ -9,6 +9,8 @@ Site estático de apresentação para o empreendimento Villa Corgo (29 apartamen
 - `assets/js/script.js`: interações (menu mobile, scroll suave, feedback de formulário)
 - `assets/icons/favicon.svg`: favicon do site
 - `assets/img/`: imagens (adicione as suas)
+  - `assets/img/plantas/`: plantas das tipologias (T1, T2...)
+  - `assets/img/galeria/`: fotografias do empreendimento/ambiente
 
 ## Usar localmente
 
@@ -26,6 +28,24 @@ cd /workspace/villa-corgo && python3 -m http.server 8080
 - Fotografias: coloque ficheiros em `assets/img/` e substitua as referências.
 - Mapa: o iframe no bloco "Localização" pode ser trocado por um mapa com API key.
 - Formulário: o `script.js` simula submissão. Substitua pelo seu endpoint (por ex., Formspree, Airtable, Google Apps Script ou backend próprio).
+
+### Upload de imagens (plantas e galeria)
+
+1. Coloque os ficheiros em:
+   - `assets/img/plantas/` (ex.: `t1.png`, `t2.png`)
+   - `assets/img/galeria/` (ex.: `fachada.jpg`, `interiores.jpg`)
+2. Edite o `index.html` e substitua os `src`/`href` das imagens de exemplo pelos seus caminhos, por exemplo:
+   ```html
+   <a href="assets/img/plantas/t2.png" data-caption="T2 — Planta">
+     <img src="assets/img/plantas/t2.png" alt="Planta T2" />
+   </a>
+   ```
+3. Commit e push:
+   ```bash
+   git add assets/img index.html
+   git commit -m "feat: adicionar plantas e fotos"
+   git push origin main
+   ```
 
 Exemplo (Formspree):
 ```js
