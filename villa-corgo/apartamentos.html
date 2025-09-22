@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Apartamentos — Villa Corgo</title>
+    <meta name="description" content="Tipologias, plantas e galeria dos apartamentos do Villa Corgo." />
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-component="header">
+      <div class="container">
+        <a href="index.html#top" class="brand" aria-label="Villa Corgo">
+          <svg class="brand-mark" width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" focusable="false">
+            <circle cx="14" cy="14" r="13" fill="currentColor" opacity="0.12" />
+            <path d="M6 8l8 14 8-14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span class="brand-name">Villa Corgo</span>
+        </a>
+        <nav class="site-nav" aria-label="Navegação principal">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">
+            <span class="sr-only">Abrir menu</span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul id="primary-menu" class="nav-list">
+            <li><a href="index.html#empreendimento">Empreendimento</a></li>
+            <li><a href="apartamentos.html" aria-current="page">Apartamentos</a></li>
+            <li><a href="index.html#plantas">Plantas</a></li>
+            <li><a href="index.html#fotos">Fotos</a></li>
+            <li><a href="index.html#localizacao">Localização</a></li>
+            <li class="nav-cta"><a class="button button-primary" href="index.html#contacto" data-cta="header-agendar">Agendar visita</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="section">
+        <div class="container">
+          <h1>Apartamentos</h1>
+          <p class="section-intro">Galeria interior e links para plantas por piso. Clique nas imagens para ampliar.</p>
+          <div class="gallery gallery-grid">
+            <figure>
+              <a href="assets/img/galeria/interior/2-T1-0001.jpg" data-caption="Interior T1">
+                <img src="assets/img/galeria/interior/2-T1-0001.jpg" alt="Interior T1" />
+              </a>
+            </figure>
+            <figure>
+              <a href="assets/img/galeria/interior/2-T1-0002.jpg" data-caption="Interior T1">
+                <img src="assets/img/galeria/interior/2-T1-0002.jpg" alt="Interior T1" />
+              </a>
+            </figure>
+            <figure>
+              <a href="assets/img/galeria/interior/2-T1-0003.jpg" data-caption="Interior T1">
+                <img src="assets/img/galeria/interior/2-T1-0003.jpg" alt="Interior T1" />
+              </a>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <h2>Plantas por Piso</h2>
+          <div class="doc-grid">
+            <div class="doc-card">
+              <div class="doc-title">Planta do Piso 2</div>
+              <div class="doc-meta">PDF</div>
+              <a class="button button-secondary doc-action" href="assets/img/plantas/Planta do Piso 2.pdf" target="_blank" rel="noopener">Abrir</a>
+            </div>
+            <div class="doc-card">
+              <div class="doc-title">Planta do Piso 3</div>
+              <div class="doc-meta">PDF</div>
+              <a class="button button-secondary doc-action" href="assets/img/plantas/Planta do Piso 3.pdf" target="_blank" rel="noopener">Abrir</a>
+            </div>
+            <div class="doc-card">
+              <div class="doc-title">Planta do Piso 4</div>
+              <div class="doc-meta">PDF</div>
+              <a class="button button-secondary doc-action" href="assets/img/plantas/Planta do Piso 4.pdf" target="_blank" rel="noopener">Abrir</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Materiais e Acabamentos</h2>
+          <p class="section-intro">Veja o documento técnico com a lista completa de materiais e equipamentos.</p>
+          <div class="doc-grid">
+            <div class="doc-card">
+              <div class="doc-title">Acabamentos (vendas)</div>
+              <div class="doc-meta">PDF</div>
+              <a class="button button-secondary doc-action" href="assets/img/galeria/ACABAMENTOS (vendas).pdf" target="_blank" rel="noopener">Abrir</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-brand">
+            <span class="brand-name">Villa Corgo</span>
+            <span class="muted">· Rua Jaime Campos, Vila Real</span>
+          </div>
+          <div class="footer-cta">
+            <a href="index.html#contacto" class="button button-secondary" data-cta-label="footer-contacto">Contactar</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="lightbox" id="lightbox" hidden>
+      <div class="lightbox-content">
+        <img src="" alt="" id="lightbox-img" />
+        <div class="caption" id="lightbox-caption"></div>
+        <button class="close" id="lightbox-close" aria-label="Fechar">✕</button>
+      </div>
+    </dialog>
+
+    <script src="assets/js/script.js" defer></script>
+  </body>
+  </html>
+
