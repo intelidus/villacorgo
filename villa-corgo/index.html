@@ -43,6 +43,8 @@
           <ul id="primary-menu" class="nav-list">
             <li><a href="#empreendimento">Empreendimento</a></li>
             <li><a href="#apartamentos">Apartamentos</a></li>
+            <li><a href="#plantas">Plantas</a></li>
+            <li><a href="#fotos">Fotos</a></li>
             <li><a href="#localizacao">Localização</a></li>
             <li class="nav-cta"><a class="button button-primary" href="#contacto" data-cta="header-agendar">Agendar visita</a></li>
           </ul>
@@ -126,6 +128,54 @@
         </div>
       </section>
 
+      <section id="plantas" class="section section-alt">
+        <div class="container">
+          <h2>Plantas</h2>
+          <p class="section-intro">Adicione aqui as plantas das tipologias (T0, T1, T2, ...). Clique para ampliar.</p>
+          <div class="gallery plantas gallery-grid plantas-grid">
+            <figure>
+              <a href="assets/img/plantas/t1.png" data-caption="T1 — Planta exemplo">
+                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=70" alt="Planta T1 (placeholder)" />
+              </a>
+              <figcaption>Tipologia T1 (exemplo)</figcaption>
+            </figure>
+            <figure>
+              <a href="assets/img/plantas/t2.png" data-caption="T2 — Planta exemplo">
+                <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1200&q=70" alt="Planta T2 (placeholder)" />
+              </a>
+              <figcaption>Tipologia T2 (exemplo)</figcaption>
+            </figure>
+          </div>
+          <div class="cta-group center" style="margin-top: 16px;">
+            <a href="#contacto" class="button button-primary">Pedir plantas em alta</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="fotos" class="section">
+        <div class="container">
+          <h2>Galeria</h2>
+          <p class="section-intro">Paisagens de Vila Real e ambientes que inspiram o estilo de vida no Villa Corgo.</p>
+          <div class="gallery gallery-grid">
+            <figure>
+              <a href="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80" data-caption="Paisagem verdejante">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=60" alt="Paisagem verdejante" />
+              </a>
+            </figure>
+            <figure>
+              <a href="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=80" data-caption="Rio e montanha">
+                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=60" alt="Rio e montanha" />
+              </a>
+            </figure>
+            <figure>
+              <a href="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80" data-caption="Arquitetura e luz natural">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=60" alt="Arquitetura e luz natural" />
+              </a>
+            </figure>
+          </div>
+        </div>
+      </section>
+
       <section id="localizacao" class="section section-alt">
         <div class="container grid-2">
           <div>
@@ -197,6 +247,14 @@
         <p class="small muted">As imagens e descrições são meramente ilustrativas. As informações comerciais são fornecidas mediante contacto.</p>
       </div>
     </footer>
+
+    <dialog class="lightbox" id="lightbox" hidden>
+      <div class="lightbox-content">
+        <img src="" alt="" id="lightbox-img" />
+        <div class="caption" id="lightbox-caption"></div>
+        <button class="close" id="lightbox-close" aria-label="Fechar">✕</button>
+      </div>
+    </dialog>
 
     <script src="assets/js/script.js" defer></script>
   </body>

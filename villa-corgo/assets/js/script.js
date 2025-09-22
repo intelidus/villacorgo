@@ -71,5 +71,49 @@
       }
     });
   }
+
+  // Lightbox for gallery
+  const lightbox = doc.getElementById('lightbox');
+  const lightboxImg = doc.getElementById('lightbox-img');
+  const lightboxCaption = doc.getElementById('lightbox-caption');
+  const lightboxClose = doc.getElementById('lightbox-close');
+
+  function openLightbox(src, caption) {
+    if (!lightbox) return;
+    lightboxImg.src = src;
+    lightboxCaption.textContent = caption || '';
+    lightbox.removeAttribute('hidden');
+    if (typeof lightbox.showModal === 'function') {
+      lightbox.showModal();
+    }
+  }
+
+  function closeLightbox() {
+    if (!lightbox) return;
+    if (typeof lightbox.close === 'function') {
+      lightbox.close();
+    }
+    lightbox.setAttribute('hidden', '');
+    lightboxImg.src = '';
+    lightboxCaption.textContent = '';
+  }
+
+  if (lightbox) {
+    doc.addEventListener('click', (e) => {
+      const link = e.target.closest('.gallery a');
+      if (!link) return;
+      e.preventDefault();
+      const src = link.getAttribute('href');
+      const caption = link.getAttribute('data-caption');
+      openLightbox(src, caption);
+    });
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+    lightboxClose && lightboxClose.addEventListener('click', closeLightbox);
+    doc.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  }
 })();
 
